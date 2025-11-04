@@ -12,8 +12,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/friends', (req, res) => {
-    const friends = ["Mickey","Goofy","Minnie","Daisygit"];
-    res.render('home', {friends});
+    const friends = ["Mickey","Goofy","Minnie","Daisy"];
+    res.render('friends', {friends});
 });
 
 app.listen(PORT, () => {
