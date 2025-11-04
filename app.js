@@ -11,6 +11,11 @@ app.get('/', (req, res) => {
     res.render('home', {person});
 });
 
+app.get('/friends', (req, res) => {
+    const friends = ["Mickey","Goofy","Minnie","Daisygit"];
+    res.render('home', {friends});
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 }); 
